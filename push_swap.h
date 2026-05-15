@@ -52,6 +52,29 @@ void radix_sort(t_stack **a, t_stack **b);
 /* Utils */
 void ft_error(void);
 void free_stack(t_stack **stack);
-void	print_stack(t_stack *a);
+
+void	sa(t_stack **a);
+void	sb(t_stack **b);
+void	ss(t_stack **a, t_stack **b);
+
+void	pa(t_stack **a, t_stack **b);
+void	pb(t_stack **a, t_stack **b);
+
+void	ra(t_stack **a);
+void	rb(t_stack **b);
+void	rr(t_stack **a, t_stack **b);
+
+void	rra(t_stack **a);
+void	rrb(t_stack **b);
+void	rrr(t_stack **a, t_stack **b);
+
+int	is_sorted(t_stack *a);
+
+int	get_max(t_stack *a);
+void	sort_three(t_stack **a);
+int	get_min(t_stack *a);
+void	sort_five(t_stack **a, t_stack **b);
+t_stack	*get_min_node(t_stack *a);
+void	assign_index(t_stack *a);
 
 #endif

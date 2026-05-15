@@ -10,7 +10,13 @@ int	main(int argc, char **argv)
 	if (argc < 2)
 		return (0);
 	init_stack(&a, argv);
-	print_stack(a);
-	free_stack(&a);
+	if (is_sorted(a))
+		return (0);
+	if (ft_lstsize(a) == 2)
+		sa(&a);
+	else if (ft_lstsize(a) == 3)
+		sort_three(&a);
+	else if (ft_lstsize(a) <= 5)
+		sort_five(&a, &b);
 	return (0);
 }

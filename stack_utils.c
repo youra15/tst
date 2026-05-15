@@ -8,7 +8,7 @@ t_stack	*ft_lstnew(int value)
 	if (!new)
 		return (NULL);
 	new->value = value;
-	new->index = 0;
+	new->index = -1;
 	new->next = NULL;
 	return (new);
 }
